@@ -1,6 +1,6 @@
 package com.javaex.ex05;
 
-public class Mul {
+public class Mul { //곱하기
 
     private int a;
     private int b;
@@ -9,6 +9,7 @@ public class Mul {
     }
 
     public int calculate() {
+    	return a*b;
     }
 
 }

@@ -1,6 +1,6 @@
 package com.javaex.ex05;
 
-public class Sub {
+public class Sub { //빼기
 
     private int a;
     private int b;
@@ -9,6 +9,7 @@ public class Sub {
     }
 
     public int calculate() {
+    	return a-b;
     }
 
 }

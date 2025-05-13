@@ -1,14 +1,23 @@
 package com.javaex.ex05;
 
-public class Add {
+public class Add { //더하기
     
     private int a;
     private int b;
     
-    public void setValue(int a, int b) {
+    public Add(int a, int b) {
+		super();
+		this.a = a;
+		this.b = b;
+	}
+
+	public void setValue(int a, int b) {
+		this.a = a;
+		this.b = b;
     }
 
-    public int calculate() {
-    }
+	public int calculate(int a, int b) {
+		return a+b;
+	}
 
 }

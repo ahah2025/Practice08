@@ -1,6 +1,6 @@
 package com.javaex.ex05;
 
-public class Div {
+public class Div { //나누기
 
     private int a;
     private int b;
@@ -9,6 +9,7 @@ public class Div {
     }
 
     public int calculate() {
+    	return a/b;
     }
 
 }
