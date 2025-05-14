@@ -12,4 +12,10 @@ public class Mul { //곱하기
     	return a*b;
     }
 
+	@Override
+	public String toString() {
+		return "Mul [a=" + a + ", b=" + b + "]";
+	}
+
+    
 }

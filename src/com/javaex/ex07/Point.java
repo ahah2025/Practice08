@@ -25,7 +25,7 @@ public class Point {
 		} else {
 			result = false;
 		}
-		return result;
+		return result; 
 	}
 	
 	

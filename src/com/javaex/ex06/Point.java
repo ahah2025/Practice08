@@ -10,6 +10,17 @@ public class Point {
 		this.y = y;
 	}
 
+	public boolean equals(Object obj) {
+		boolean result;
+		Point p = ((Point)obj);
+		
+		if (this.x == p.x) {
+			result = true;
+		} else {
+			result = false;
+		}
+		return result; 
+	}
 	
 	
 }

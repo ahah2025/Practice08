@@ -12,4 +12,10 @@ public class Sub { //빼기
     	return a-b;
     }
 
+	@Override
+	public String toString() {
+		return "Sub [a=" + a + ", b=" + b + "]";
+	}
+
+    
 }

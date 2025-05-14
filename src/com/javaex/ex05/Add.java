@@ -20,4 +20,10 @@ public class Add { //더하기
 		return a+b;
 	}
 
+	@Override
+	public String toString() {
+		return "Add [a=" + a + ", b=" + b + "]";
+	}
+
+	
 }

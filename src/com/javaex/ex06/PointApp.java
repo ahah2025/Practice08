@@ -9,7 +9,10 @@ public class PointApp {
 		Point p3 = new Point(5, 3);
 		Point p4 = p1;
 		
-		System.out.println(p1 == p2); //p1(2,3) 과 p2(2,3)가 같냐?      false
+		System.out.println(p1 == p2); 
+		//값을 비교할때는 equals() 사용하는데 p1(2,3)과 p2(2,3)을 비교했음   
+		
+		
 		System.out.println(p2 == p3); //p2(2,3) 과 p3(5,3) 같냐?        false
 		System.out.println(p3 == p4); //p3(5, 3)과 p4(=p1)2,3 같냐?     false	
 		System.out.println(p4 == p1); //p4(=p1)2,3 같냐?  				true		

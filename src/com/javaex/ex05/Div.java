@@ -12,4 +12,10 @@ public class Div { //나누기
     	return a/b;
     }
 
+	@Override
+	public String toString() {
+		return "Div [a=" + a + ", b=" + b + "]";
+	}
+
+    
 }
