@@ -6,16 +6,16 @@ public class CalcApp {
 
     public static void main(String[] args) {
 
-    	Add add = new Add();
+    	Add add = new Add(0,0);
     
     	Scanner sc = new Scanner(System.in);
     	String str;
     	
-    	System.out.println(">> ");
+    	System.out.print(">> ");
     	str = sc.nextLine();
     	
-    	if(str.split("+")) {
-    		System.out.println();
+    	if(str.split("+") != null) {
+    		System.out.println(add + "+" + add);
     	}
     	Integer strInt = Integer.parseInt(str);    	
     	
