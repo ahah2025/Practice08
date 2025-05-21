@@ -6,43 +6,60 @@ public class CalcApp {
 
     public static void main(String[] args) {
 
-    	/*
-    	Add add = new Add(5,3);
-    	 
     	Scanner sc = new Scanner(System.in);
-    	String str=null;
-    	
-    	System.out.print(">> ");
-    	str = sc.nextLine();
-    	
-    	if(str.split("+") != null) {
-    		System.out.println(add.toString());
-    		System.out.println(add + "+" + add);
-    		
-    	}else{
-    		System.out.println(add.toString());
-    		System.out.println(add + "-" + add);
-    	}
-    	Integer strInt = Integer.parseInt(str);    	
-    	
-    	sc.close(); //x
-    	*/
-    	System.out.println(">> 5 + 3");
-    	System.out.println(">> 8");
-    	
-    	System.out.println(">> 8 - 2");
-    	System.out.println(">> 6");
-    	
-    	System.out.println(">> 4 * 5");
-    	System.out.println(">> 20");
-    	
-    	System.out.println(">> 15 / 7");
-    	System.out.println(">> 2");
-    	
-    	System.out.println(">> 15 & 7");
-    	System.out.println("알 수 없는 연산입니다.");
-    	
-    	System.out.println(">> /q");
-    	System.out.println("종료합니다.");
+        int result;
+        
+        while (true) {
+
+            System.out.print(">> ");
+            String strLine = sc.nextLine();
+
+            if (strLine.equals("/q")) {
+                System.out.println("종료합니다.");
+                break;
+            }
+
+            String data[] = strLine.split(" ");
+            int leftVal = Integer.parseInt(data[0]);
+            int rightVal = Integer.parseInt(data[2]);
+            String middleVal = data[1];
+
+            
+            switch (middleVal) {
+            case "+":
+		        Add add = new Add();
+		        add.setValue(leftVal, rightVal);
+		        result = add.calculate();
+		        System.out.println( ">> " + result );
+		        break;
+        
+		    case "-":
+		        Sub sub = new Sub();
+		        sub.setValue(leftVal, rightVal);
+		        result = sub.calculate();
+		        System.out.println( ">> " + result );
+		        break;
+		        
+		    case "*":
+		        Mul mul = new Mul();
+		        mul.setValue(leftVal, rightVal);
+		        result = mul.calculate();
+		        System.out.println( ">> " + result );
+		        break;
+	    
+		    case "/":
+		        Div div = new Div();
+		        div.setValue(leftVal, rightVal);
+		        result = div.calculate();
+		        System.out.println( ">> " + result );
+		        break;
+		        
+		    default :
+		        System.out.println("알 수 없는 연산입니다.");
+		        break;	
+            }																			
+        }
+
+        sc.close();
     }
 }

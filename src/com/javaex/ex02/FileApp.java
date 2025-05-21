@@ -11,7 +11,7 @@ public class FileApp {
 		
 		try {
 			fileRead();
-		} catch (Exception e) {
+		} catch (IOException e) {
 			System.out.println("파일이 없습니다.");
 		}
 

@@ -15,9 +15,7 @@ public class SumApp {
 		String[] num = numLine.split(" ");
 		
 		for(int i=0; i<num.length; i++) {
-			String strNum = num[i];
-			Integer n1 = Integer.parseInt(strNum);
-			sum = sum + n1;
+			sum = sum + Integer.parseInt(num[i]);
 		}
 		
 		System.out.println("합:"+sum);

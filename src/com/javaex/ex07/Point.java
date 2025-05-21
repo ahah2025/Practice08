@@ -7,9 +7,6 @@ public class Point {
 	private int y;
 	
 	//생성자
-	public Point() {
-	}
-
 	public Point(int x, int y) {
 		this.x = x;
 		this.y = y;
@@ -17,15 +14,13 @@ public class Point {
 	
 	//equals() 메소드를 작성하세요.
 	public boolean equals(Object obj) {
-		boolean result;
-		Point p = ((Point)obj);
+		Point p = (Point)obj;
 		
 		if (this.x == p.x) {
-			result = true;
+			return true;
 		} else {
-			result = false;
+			return false;
 		}
-		return result; 
 	}
 	
 	

@@ -5,25 +5,12 @@ public class Add { //더하기
     private int a;
     private int b;
     
-    public Add(int a, int b) {
-		super();
-		this.a = a;
-		this.b = b;
-	}
-
 	public void setValue(int a, int b) {
 		this.a = a;
 		this.b = b;
     }
 
-	public int calculate(int a, int b) {
+	public int calculate() {
 		return a+b;
 	}
-
-	@Override
-	public String toString() {
-		return "Add [a=" + a + ", b=" + b + "]";
-	}
-
-	
 }
